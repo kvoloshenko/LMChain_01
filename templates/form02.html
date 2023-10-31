@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>GPT-4</title>
 <!--    подключение css-->
-    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.css" >
+    <link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.css" >
 
 </head>
 <body class="p-3 mb-2 bg-light text-dark">
@@ -25,10 +25,11 @@
     <h1>GPT-4: форма для ввода</h1>
     <!--    form для отправки данных на сервер-->
     <div class="input-group mb-3">
-    <form action="results.html" method="post">
+    <form action="form02.html" method="post">
 <!--        input - поля для ввода данных или кнопки-->
 <!--        type - тип поля, value-его значение, placeholder-подсказка-->
         <input type="text" name="query_string" value="" placeholder="строка ввода" class="form-control">
+<!--        <textarea class="form-control" name="query_string" value="" placeholder="строка ввода" rows="3"></textarea>-->
         <br>
         <br>
 <!--        submit - кнопка-->
@@ -37,6 +38,26 @@
     </form>
     </div>
     <hr>
+
+    {% if blog %}
+    <br><br>
+    <h1>Результаты запроса</h1>
+    <h3>Blog Post</h3>
+    <p class="text-break">{{blog}}</p>
+    <br><br>
+    {% endif %}
+
+    {% if yt_scripts %}
+    <h3>Youtube Script</h3>
+    <p class="text-break">{{yt_scripts}}</p>
+    <br><br>
+    {% endif %}
+
+    {% if yt_visuals %}
+    <h3>Youtube Visuals</h3>
+    <p class="text-break">{{yt_visuals}}</p>
+    <br><br>
+    {% endif %}
 
 <div class="alert alert-success" role="alert"><p>
     Существует два вида языков программирования: одни – все ругают, другими не пользуются
