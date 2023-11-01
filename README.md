@@ -6,6 +6,14 @@ LM Studio: Sequential Chain
 
 2. Можно ли сравнить GPT и локальную модели использую Sequential Chain?
 
+см. результат в файле Doc\SequentialChain.mhtml
+
+или в файле Doc\output_01.txt
+
+![](Doc/result_01.png)
+
+![](Doc/result_02.png)
+
 
 ## LM Studio
 В качестве сервера с LLM (Large language model) используется продукт LM Studio: https://lmstudio.ai/
