@@ -1,3 +1,4 @@
+Приглашаю в Телеграм общаться по это теме: https://t.me/AiExp01
 # LMChain_01
 LM Studio: Sequential Chain
 
