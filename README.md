@@ -9,6 +9,7 @@ LM Studio: Sequential Chain
 см. результат в файле Doc\SequentialChain.mhtml
 
 или в файле Doc\output_01.txt
+[output_01.txt](Doc%2Foutput_01.txt)
 
 ![](Doc/result_01.png)
 
