@@ -1,39 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>
-        Sequential Chain
-    </title>
-    <!--    подключение css-->
+    <title>Sequential Chain</title>
+<!--    подключение css-->
     <link rel="stylesheet" type="text/css" href="static/bootstrap/css/bootstrap.css" >
+
 </head>
 <body class="p-3 mb-2 bg-light text-dark">
-<!-- Тут будет тело страницы-->
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="/index.html">На главную</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/form01.html">LM Studio</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/form02.html">GPT-4</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/contacts.html">Контакты</a>
-  </li>
-</ul>
-<!--    h1-h6 размер заголовков-->
-<h1>
-    Sequential Chain
-</h1>
+    <div class="container">
+        <h1>Sequential Chain</h1>
+        <form action="index.html" method="post">
+            <input type="text" name="query_string" value="" placeholder="строка ввода" class="form-control">
+            <br><br>
+            <p>
+                <input type="submit" value="Сгенерировать" class="btn btn-secondary">
+            </p>
+        </form>
+        <hr>
+        {% if gpt_blog %}
+        <br><br>
+        <h1>GPT: Результаты запроса</h1>
+        <h3>Blog Post</h3>
+        <pre class="text-break">{{gpt_blog}}</pre>
+        <br><br>
+        {% endif %}
 
-<div class="alert alert-success" role="alert">
-<p>
-    Если вы начинаете сгонять муху с монитора при помощи курсора мыши, пора выключать компьютер
-</p>
-</div>
+        {% if gpt_yt_scripts %}
+        <h3>Youtube Script</h3>
+        <pre class="text-break">{{gpt_yt_scripts}}</pre>
+        <br><br>
+        {% endif %}
 
+        {% if gpt_yt_visuals %}
+        <h3>Youtube Visuals</h3>
+        <pre class="text-break">{{gpt_yt_visuals}}</pre>
+        <br><br>
+        {% endif %}
+        <hr>
+        {% if lm_blog %}
+        <br><br>
+        <h1>LM Studio: Результаты запроса</h1>
+        <h3>Blog Post</h3>
+        <pre class="text-break">{{gpt_blog}}</pre>
+        <br><br>
+        {% endif %}
 
+        {% if lm_yt_scripts %}
+        <h3>Youtube Script</h3>
+        <pre class="text-break">{{gpt_yt_scripts}}</pre>
+        <br><br>
+        {% endif %}
+
+        {% if lm_yt_visuals %}
+        <h3>Youtube Visuals</h3>
+        <pre class="text-break">{{gpt_yt_visuals}}</pre>
+        <br><br>
+        {% endif %}
+    </div>
 </body>
 </html>

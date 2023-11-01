@@ -1,0 +1,8 @@
+API_KEY = 'yor key value'             # Open AI API Key
+TEMPERATURE = 0.8                     # Температура модели
+# LL_MODEL = "gpt-3.5-turbo-0301"     # Модель
+# LL_MODEL = "gpt-3.5-turbo-0613"     # Модель
+# LL_MODEL = "gpt-3.5-turbo-16k-0613" # Модель
+LL_MODEL = 'gpt-4-0613'               # Модель
+# LL_MODEL = "gpt-3.5-turbo-16k"      # Модель
+# LL_MODEL = "gpt-3.5-turbo"          # Модель

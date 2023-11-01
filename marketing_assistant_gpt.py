@@ -1,7 +1,6 @@
 # https://github.com/wayne923/langchain-marketing-assistant/blob/main/app.py
 # https://youtu.be/cYvNX3zxQ6c?si=t09nxU2ubhywfIT9
 
-import streamlit as st
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SimpleSequentialChain, SequentialChain
@@ -93,35 +92,3 @@ if __name__ == '__main__':
     topic ="инновационная экологически чистая кофейная чашка"
     ans = marketing_text(topic)
     pprint.pprint(ans)
-
-
-# # Streamlit App Front End Magic!
-# st.title('✨🤖 Product Marketing Assistant')
-# st.text(
-#     """Features:
-#         1) Blog post
-#         2) Youtube script
-#         3) Youtube visual description
-#     Future: Instagram, Twitter, LinkedIn post generator""")
-# user_input = st.text_input('Insert product description:',
-#                            placeholder='New recommended feature launch for photos app on phone.')
-#
-# if st.button('Generate') and user_input:
-#     app_data = marketing_automation_chain(user_input)
-#
-#     st.divider()
-#
-#     st.write(f"Generated content based on {app_data['product_description']}")
-#
-#     st.write('## Blog Post')
-#     st.write(app_data['blog'])
-#
-#     st.divider()
-#
-#     st.write('## Youtube')
-#     st.write('### Script')
-#     st.write(app_data['yt_script'])
-#     st.write('### Visuals')
-#     st.write(app_data['yt_visuals'])
-# To Run from command prompt
-# streamlit run C:/_AI/LMChain_01/marketing_assistant_01.py

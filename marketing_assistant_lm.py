@@ -2,7 +2,7 @@ from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
-
+import pprint
 
 llm = OpenAI(
     openai_api_key = "anyValueYouLike",
@@ -56,7 +56,12 @@ marketing_automation_chain = SequentialChain(
     verbose=True
 )
 
-product_description = 'инновационная экологически чистая кофейная чашка'
-chain_run_result = marketing_automation_chain(product_description)
-print(type(chain_run_result))
+def marketing_text(user_input):
+    app_data = marketing_automation_chain(user_input)
+    return app_data
+
+if __name__ == '__main__':
+    topic ="инновационная экологически чистая кофейная чашка"
+    ans = marketing_text(topic)
+    pprint.pprint(ans)
 
