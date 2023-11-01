@@ -74,6 +74,7 @@ youtube_visuals_chain = LLMChain(llm=llm, prompt=youtube_visuals_template,
 
 # Sequential Chain
 marketing_automation_chain = SequentialChain(
+    print(f'LL_MODEL={LL_MODEL}')
     chains=[blog_chain, youtube_script_chain, youtube_visuals_chain],
     input_variables=['product_description'],
     output_variables=['blog','yt_script','yt_visuals'],
