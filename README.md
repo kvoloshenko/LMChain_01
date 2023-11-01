@@ -9,6 +9,9 @@ LM Studio: Sequential Chain
 ## LM Studio
 В качестве сервера с LLM (Large language model) используется продукт LM Studio: https://lmstudio.ai/
 
+### Скришот про интеграцию LM Studio
+![](Doc/LM_StudioIntegrations.png)
+
 ### Скришот про настройку LM Studio
 ![](Doc/LMStudioConfig_01.png)
 
