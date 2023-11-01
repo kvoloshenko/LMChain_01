@@ -4,7 +4,7 @@ LM Studio: Sequential Chain
 
 1. Работает ли под LM Studio Sequential Chain от LangChain?
 
-2. Можно ли сравнить GPT и локальную модели использую Sequential Chain?
+2. Можно ли сравнить GPT и локальную модели используя Sequential Chain?
 
 см. результат в файле Doc\SequentialChain.mhtml
  
