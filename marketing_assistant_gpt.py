@@ -1,6 +1,3 @@
-# https://github.com/wayne923/langchain-marketing-assistant/blob/main/app.py
-# https://youtu.be/cYvNX3zxQ6c?si=t09nxU2ubhywfIT9
-
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain, SimpleSequentialChain, SequentialChain
