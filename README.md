@@ -1,10 +1,5 @@
 Приглашаю в Телеграм общаться по это теме: https://t.me/AiExp01
-# LMChain_01
-LM Studio: Sequential Chain
-
-1. Работает ли под LM Studio Sequential Chain от LangChain?
-
-2. Можно ли сравнить GPT и локальную модели используя Sequential Chain?
+# Простой запрос
 
 см. результат в файле Doc\BlogPost.mhtml
  
