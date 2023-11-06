@@ -22,11 +22,11 @@ def results():
 def run_post():
     query_s = request.form['query_string']
     print(f'query={query_s}')
-    gpt_data = magpt.marketing_text(query_s)
-    pprint.pprint(gpt_data)
-    gpt_blog = gpt_data['blog']
-    gpt_yt_script = gpt_data['yt_script']
-    gpt_yt_visuals= gpt_data['yt_visuals']
+    # gpt_data = magpt.marketing_text(query_s)
+    # pprint.pprint(gpt_data)
+    # gpt_blog = gpt_data['blog']
+    # gpt_yt_script = gpt_data['yt_script']
+    # gpt_yt_visuals= gpt_data['yt_visuals']
 
     lm_data = malm.marketing_text(query_s)
     pprint.pprint(lm_data)
@@ -34,9 +34,9 @@ def run_post():
     lm_yt_script = lm_data['yt_script']
     lm_yt_visuals= lm_data['yt_visuals']
     return render_template('index.html',
-                           gpt_blog=gpt_blog,
-                           gpt_yt_scripts = gpt_yt_script,
-                           gpt_yt_visuals = gpt_yt_visuals,
+                           # gpt_blog=gpt_blog,
+                           # gpt_yt_scripts = gpt_yt_script,
+                           # gpt_yt_visuals = gpt_yt_visuals,
                            lm_blog = lm_blog,
                            lm_yt_scripts = lm_yt_script,
                            lm_yt_visuals = lm_yt_visuals
