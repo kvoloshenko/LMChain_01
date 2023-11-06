@@ -8,10 +8,13 @@ def marketing_text(user_input, temp=0.9):
     system_content = """
     Ты старательный помощник.
     """
+    print(f'system_content={system_content}')
+    user_content = 'Write a Telegram post on ' + user_input + ' Give the result in Russian'
+    print(f'user_content={user_content}')
 
     messages = [
         {"role": "system", "content": system_content},
-        {"role": "user", "content": user_input}
+        {"role": "user", "content": user_content}
     ]
 
 
@@ -27,6 +30,6 @@ def marketing_text(user_input, temp=0.9):
     return answer
 
 if __name__ == '__main__':
-    topic ="инновационная экологически чистая кофейная чашка"
+    topic ="Обучаю безопасному и контраварийному вождению автомобиля"
     ans = marketing_text(topic)
     print(ans)
